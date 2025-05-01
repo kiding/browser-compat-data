@@ -14,7 +14,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
       - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v2
+        uses: peter-evans/repository-dispatch@v3
         if: ${{ github.repository == 'mdn/browser-compat-data' }}
         with:
           token: ${{ secrets.SIDESHOWBARKER }}
